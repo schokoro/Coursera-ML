@@ -95,9 +95,9 @@ class Table:
             for n, line in enumerate(f):
                 match = json.loads(line)
                 yield match
-                if (n + 1) % 100 == 0:
-                    break
-                    # print('Processed %d matches' % (n+1))
+                if (n + 1) % 1000 == 0:
+                    # break
+                    print('Processed %d matches' % (n+1))
 
 
 if __name__ == '__main__':
